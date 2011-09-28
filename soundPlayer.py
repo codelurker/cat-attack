@@ -24,6 +24,8 @@
 
 #SoundPlayer class- plays a sound
 
+import pygame
+
 class SoundPlayer:
 	engine=None	
 	
@@ -31,4 +33,5 @@ class SoundPlayer:
 		self.engine=engine
 		
 	def playSound(self, pathToSound):
-		pass
+		sound=pygame.mixer.Sound(pathToSound)
+		sound.play()

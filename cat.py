@@ -90,5 +90,6 @@ class Cat:
 		#basic geometry here- we're checking whether the click has landed in the cat's hitbox or not
 		if x>self.posX and x<(self.posX+self.hitBoxSize):
 			if y>self.posY and y<(self.posY+self.hitBoxSize):
+				self.engine.soundPlayer.playSound("meow.wav")
 				return True
 		return False
