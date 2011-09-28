@@ -1,3 +1,4 @@
+import engine
 
-e= Engine()
+e= engine.Engine()
 e.mainLoop()
