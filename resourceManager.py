@@ -7,7 +7,7 @@ class ResourceManager:
 	def __init__(self, engine):
 		self.engine=engine
 		
-	def loadResource(self, resourceName, pathToResource):
-		if (not resourceName in self.surfaces):
-			self.surfaces[resourceName]= pygame.image.load(pathToResource)
-		return self.surfaces[resourceName]
+	def getResource(self, pathToResource):
+		if (not pathToResource in self.surfaces):
+			self.surfaces[pathToResource]= pygame.image.load(pathToResource)
+		return self.surfaces[pathToResource]
