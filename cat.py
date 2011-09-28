@@ -78,10 +78,10 @@ class Cat:
 		#return self.engine.resourceMgr.getResource("ada.png")
 		
 		#Or uncomment this for unoptimized resource management
-		return self.surface
+		#return self.surface
 		
 		#Or uncomment this along with the 3 rotation lines if you want spinny cats
-		#return self.tmpSurface
+		return self.tmpSurface
 		
 	def getBlitPos(self):
 		return (self.posX, self.posY)
