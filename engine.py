@@ -26,6 +26,7 @@
 
 from constants import *
 
+import pygame
 import renderer
 import inputManager
 import soundPlayer
@@ -46,6 +47,8 @@ class Engine:
 	lastFPSSum=0
 	
 	def __init__(self):
+		pygame.init()
+		pygame.display.set_caption("Cat attack!")
 		self.graphicsRenderer= renderer.Renderer(self)
 		self.inputMgr= inputManager.InputMgr(self)
 		self.soundPlayer= soundPlayer.SoundPlayer(self)

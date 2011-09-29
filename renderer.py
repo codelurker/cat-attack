@@ -36,8 +36,6 @@ class Renderer:
 	
 	def __init__(self, engine):
 		self.engine=engine
-		pygame.init()
-		pygame.display.set_caption("Cat attack!")
 		self.font=pygame.font.Font(None, 48)
 		self.screen=pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 		#we render in an intermediary buffer that we then render on the screen- not useful in a basic case, but good practice.
